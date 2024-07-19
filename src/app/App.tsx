@@ -1,9 +1,10 @@
-import './styles/index.scss'
 import {useTheme} from "app/providers/ThemeProvider";
 import {classNames} from "shared/lib/classNames";
 import {AppRouter} from "./providers/router";
 import {Navbar} from "widgets/Navbar";
 import {Sidebar} from "widgets/Sidebar";
+
+import './styles/index.scss'
 
 const App = () => {
     const {theme} = useTheme();
@@ -15,7 +16,6 @@ const App = () => {
                 <Sidebar/>
                 <AppRouter/>
             </div>
-
         </div>
     )
 }
